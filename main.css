@@ -18,7 +18,9 @@ header .container{
 }
 
 header{
-    padding: 16px 0 0; /*espaçamento topo de 16px, demais 0*/
-    border-bottom: 1px solid #ccc; /*borda inferior para separar o site*/
+    padding: 16px 0 16px; /*espaçamento topo de 16px, demais 0*/
+    background-color: blueviolet;
+    /*border-bottom: 1px solid #0033ff; borda inferior para separar o site*/
     margin-bottom: 56px; /*margem para distanciar do conteúdo principal*/
 }
+
