@@ -5,6 +5,10 @@
     font-family: Roboto, sans-serif;
 }
 
+body {
+    background-color: #eeeaea;
+}
+
 .container{
     max-width: 1280px;
     width: 100%; 
@@ -19,8 +23,135 @@ header .container{
 
 header{
     padding: 16px 0 16px; /*espaçamento topo de 16px, demais 0*/
-    background-color: blueviolet;
+    background-color: rgb(71, 78, 123);
     /*border-bottom: 1px solid #0033ff; borda inferior para separar o site*/
     margin-bottom: 56px; /*margem para distanciar do conteúdo principal*/
 }
 
+header li{
+    float: left;
+    list-style: none; /*remove os bulets*/
+    padding: 8px;
+    /*border-top: 4px solid transparent;*/
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header nav li a { /*cor do link do cabeçalho*/
+    color: #fff;
+    text-decoration: none; /*remove o underline dos links*/
+}
+
+header img{
+    max-width: 400px; 
+}
+
+#about img{
+    max-width: 650px;
+    margin-right: 24px;
+}
+
+.container-flex{
+    display: flex;
+    text-align: justify;
+    font-size: 18px;
+    color: rgb(131, 131, 131);
+}
+
+section{
+    padding: 30px 0;
+}
+
+section h2{ /*margem no titulo da seção*/
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(182, 63, 63)
+    /*border-bottom: 3px solid blueviolet;*/
+}
+
+button{
+    display: block;
+    width: 100%; /*ocupa 100% do container*/
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(71, 78, 123);
+    color: #fff;
+    font: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form{
+    max-width: 360px;
+}
+
+.form-campo{
+    margin-bottom: 16px; /*marfem inferior*/
+}
+
+.form-campo label{
+    font-weight:lighter;
+    display: block; /*label em uma linha e campo em outra*/
+    font-size: 14px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button{
+    width: 120px;
+}
+
+footer{
+    background-color: rgb(71, 78, 123);
+    padding-top: 16px; /*espaçamento topo*/
+    color: #fff;
+}
+
+footer li{
+    list-style: none; /*remove bullet*/
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer > .container-flex{
+    color: #fff;
+    font-size: small;
+}
+
+
+footer > .container{
+    justify-content: space-between; /*titulo na esquerda e menu na direita*/
+    align-items: center; /*alinhamento vertical*/
+    padding-bottom: 16px; /*espaçamento abaixo*/
+}
+
+.price{
+    display: block;
+    margin: 16px 0;
+}
+
+.price del{
+    font-size: 14px;
+    color:rgb(141, 141, 141)
+}
