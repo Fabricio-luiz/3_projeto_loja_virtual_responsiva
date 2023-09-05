@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #eeeaea;
+    background-color: #eceef0;
 }
 
 .container{
@@ -23,13 +23,13 @@ header .container{
 
 header{
     padding: 16px 0 16px; /*espaçamento topo de 16px, demais 0*/
-    background-color: rgb(71, 78, 123);
+    background-color: #9f3f4b;
     /*border-bottom: 1px solid #0033ff; borda inferior para separar o site*/
-    margin-bottom: 56px; /*margem para distanciar do conteúdo principal*/
+    margin-bottom: 46px; /*margem para distanciar do conteúdo principal*/
 }
 
 header li{
-    float: left;
+    float: left; /*elementos um ao lado do outro*/
     list-style: none; /*remove os bulets*/
     padding: 8px;
     /*border-top: 4px solid transparent;*/
@@ -45,11 +45,11 @@ header nav li a { /*cor do link do cabeçalho*/
 }
 
 header img{
-    max-width: 400px; 
+    width: 400px; 
 }
 
 #about img{
-    max-width: 650px;
+    width: 650px;
     margin-right: 24px;
 }
 
@@ -66,11 +66,11 @@ section{
 
 section h2{ /*margem no titulo da seção*/
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: bold;
-    color:rgb(182, 63, 63)
-    /*border-bottom: 3px solid blueviolet;*/
+    color:#2b639e;
+    /*border-top: 2px dotted rgb(63, 80, 151);*/
 }
 
 button{
@@ -78,13 +78,17 @@ button{
     width: 100%; /*ocupa 100% do container*/
     padding: 8px 0;
     border: none;
-    background-color: rgb(71, 78, 123);
+    background-color: #9f3f4b;
     color: #fff;
     font: 16px;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: italic;
     cursor: pointer;
     border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2b639e;
 }
 
 form{
@@ -119,8 +123,14 @@ form button{
     width: 120px;
 }
 
+.message-error{
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+
 footer{
-    background-color: rgb(71, 78, 123);
+    background-color: #9f3f4b;
     padding-top: 16px; /*espaçamento topo*/
     color: #fff;
 }
@@ -139,11 +149,11 @@ footer > .container-flex{
     font-size: small;
 }
 
-
 footer > .container{
     justify-content: space-between; /*titulo na esquerda e menu na direita*/
     align-items: center; /*alinhamento vertical*/
     padding-bottom: 16px; /*espaçamento abaixo*/
+    padding-top: 8px;
 }
 
 .price{
@@ -155,3 +165,160 @@ footer > .container{
     font-size: 14px;
     color:rgb(141, 141, 141)
 }
+
+
+.produtos-destaque{
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%; /*espaçamento entre as colunas*/
+    /*row-gap: 5%; /*espaçamento entre linhas*/
+}
+
+.produtos-destaque img{
+    width: 100%;
+    padding: 8px;
+}
+
+.produtos-destaque a{
+    text-decoration: none; /*retira o underline*/
+    color: #2b639e;
+    font-size: medium;
+    text-align: center;
+}
+
+.produtos-destaque a button{
+    width: 100%;
+}
+
+.produtos-destaque a del{
+    margin-right: 8px;
+}
+
+.produtos-destaque a strong{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .conteundo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .container-flex{
+        display: block;
+        font-size: auto;
+        }
+    
+    .container-flex img{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .produtos-destaque{
+        display: block;
+    }
+
+    .produtos-destaque button{
+        width: 100%;
+    }
+
+    .produtos-destaque h3{
+        font-size: auto;
+    }
+
+    .produtos-destaque img{
+        width: 100%;
+        padding: 18px;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    header div.container img{
+        width: 100%;
+    }
+    
+    header li{
+        font-size: 15px;
+    }
+
+    footer .container-flex img{
+        width: auto;
+        align-items: center;
+    }
+
+    .produtos-destaque a{
+        font-size: small;
+    }
+
+    #about img{
+        width: 100%;
+    }
+
+    #about h2{
+        font-size: 25px;
+    }
+
+    #about p{
+        font-size: 15px;
+    }
+
+    #produts h2{
+        font-size: 25px;
+    }
+    #contact h2{
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .container-flex{
+        display: block;
+        font-size: auto;
+    }
+
+    .produtos-destaque{
+        grid-template-columns: repeat(2, 49%); /*100-2=98 1 % de separação entre as colunas*/
+    }
+
+    .produtos-destaque img{
+        width: 100%;
+        padding: 16px;
+    }
+
+    .produtos-destaque h3{
+        font-size: auto;
+    }
+
+    header li{
+        font-size: 15px;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    footer .container-flex{
+        display: flex;
+        padding-bottom: 16px; /*espaçamento abaixo*/
+        padding-top: 8px;      
+    }
+
+    #about img{
+        width: 100%;
+    }
+
+}
+
+
