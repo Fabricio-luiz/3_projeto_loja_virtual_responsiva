@@ -247,9 +247,11 @@ footer > .container{
         font-size: 15px;
     }
 
-    footer .container-flex img{
+    footer .icones{
+        display: flex;
         width: auto;
-        align-items: center;
+        padding-top: 16px;
+        justify-content: center;
     }
 
     .produtos-destaque a{
