@@ -250,8 +250,12 @@ footer > .container{
     footer .icones{
         display: flex;
         width: auto;
-        padding-top: 16px;
+        padding-top: 12px;
         justify-content: center;
+    }
+
+    footer p{
+        text-align: center;
     }
 
     .produtos-destaque a{
