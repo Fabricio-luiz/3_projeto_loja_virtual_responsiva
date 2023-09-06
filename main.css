@@ -44,6 +44,10 @@ header nav li a { /*cor do link do cabeçalho*/
     text-decoration: none; /*remove o underline dos links*/
 }
 
+header nav li a:hover {
+    color: #ffee33;
+}
+
 header img{
     width: 400px; 
 }
